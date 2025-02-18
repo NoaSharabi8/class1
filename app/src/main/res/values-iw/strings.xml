@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">class1</string>
+    <string name="exit">יציאה</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="trivia">טריוויה</string>
+    <string name="question">שאלה\nשאלה\nשאלה</string>
+</resources>

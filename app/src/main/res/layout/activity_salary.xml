@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1">
+
+    <!-- 🔺 תפריט עליון -->
+    <View
+        android:id="@+id/salary_LAY_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FF4081"/>
+
+    <!-- 🔹 תוכן הדף -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- כותרת ראשית -->
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personalize Your Color Style !"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#C2185B"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- כותרת משנה -->
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select one of the options from the list:"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#F8BBD0"
+            android:layout_marginBottom="30dp" />
+
+        <!-- רשימה נפתחת (Spinner) -->
+        <Spinner
+            android:id="@+id/spinner_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp"
+            android:outlineAmbientShadowColor="#FCE4EC"
+            android:outlineSpotShadowColor="#FCE4EC"
+            android:layout_marginBottom="300dp"
+            android:textAlignment="viewStart"/>
+
+        <!-- כפתור אישור -->
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:backgroundTint="#E91E63"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="30dp" />
+    </LinearLayout>
+
+    <!-- 🔻 תפריט תחתון -->
+    <View
+        android:id="@+id/salary_LAY_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FF4081"/>
+
+</LinearLayout>

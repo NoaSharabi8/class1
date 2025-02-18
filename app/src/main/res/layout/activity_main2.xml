@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Salary"
+    android:padding="32dp"
+    >
+
+    <TextView
+        android:id="@+id/trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trivia"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32sp"
+        android:background="#90B8CA"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:minLines="3"
+        android:maxLines="3"
+        android:textAlignment="center"
+
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@id/trivia"
+        android:layout_marginTop="32sp"
+        android:background="#B18896"
+        />
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textSize="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#AA9B84"
+        />
+
+    <TextView
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/yes"
+        android:textSize="50sp"
+        android:layout_above="@id/exit"
+        android:layout_marginBottom="32dp"
+        android:background="#0D1A5E"
+        />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/no"
+        android:textSize="50sp"
+        android:layout_above="@id/yes"
+        android:layout_marginBottom="32dp"
+        android:background="#D83232"
+        />
+
+
+
+
+
+
+</RelativeLayout>

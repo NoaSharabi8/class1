@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">class1</string>
+    <string name="exit">exit</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="trivia">trivia</string>
+    <string name="question">question\nquestion\nquestion</string>
+</resources>
