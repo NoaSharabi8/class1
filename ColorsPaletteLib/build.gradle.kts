@@ -1,10 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
-<<<<<<< HEAD
 
-=======
     id("maven-publish")
->>>>>>> 3d83391 (Initial commit)
+
 }
 
 android {
@@ -33,15 +31,13 @@ android {
     }
 }
 
-<<<<<<< HEAD
-=======
 afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("release") {
                 groupId = "com.example"
                 artifactId = "ColorsPalette"
-                version = "1.0.0"
+                version = "1.0.2"
                 artifact(tasks.getByName("bundleReleaseAar"))
                 pom {
                     withXml {
@@ -68,8 +64,6 @@ afterEvaluate {
 }
 
 
->>>>>>> 3d83391 (Initial commit)
-
 dependencies {
 
     implementation(libs.appcompat)
@@ -78,13 +72,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-<<<<<<< HEAD
+
     implementation(libs.retrofit)
     implementation (libs.converter.gson.v290)
-=======
+
     api(libs.retrofit)
     api(libs.converter.gson.v290)
->>>>>>> 3d83391 (Initial commit)
+
     //implementation (libs.converter.gson)
     //api(libs.converter.gson)
 

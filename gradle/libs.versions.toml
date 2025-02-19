@@ -13,12 +13,9 @@ constraintlayout = "2.1.4"
 retrofit = "(insert latest version"
 squareupConverterGson = "2.11.0"
 uiGraphicsAndroid = "1.7.7"
-
-<<<<<<< HEAD
-=======
+class1 = "1.0.2"
 
 
->>>>>>> 3d83391 (Initial commit)
 [libraries]
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 converter-gson-v2110 = { module = "com.squareup.retrofit2:converter-gson", version.ref = "squareupConverterGson" }
