@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
+<<<<<<< HEAD
 
+=======
+    id("maven-publish")
+>>>>>>> 3d83391 (Initial commit)
 }
 
 android {
@@ -29,6 +33,42 @@ android {
     }
 }
 
+<<<<<<< HEAD
+=======
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                groupId = "com.example"
+                artifactId = "ColorsPalette"
+                version = "1.0.0"
+                artifact(tasks.getByName("bundleReleaseAar"))
+                pom {
+                    withXml {
+                        val dependenciesNode = asNode().appendNode("dependencies")
+                        configurations.api.get().dependencies.forEach { dependency ->
+                            val dependencyNode = dependenciesNode.appendNode("dependency")
+                            dependencyNode.appendNode("groupId", dependency.group)
+                            dependencyNode.appendNode("artifactId", dependency.name)
+                            dependencyNode.appendNode("version", dependency.version)
+                            dependencyNode.appendNode("scope", "compile")
+                        }
+                        configurations.implementation.get().dependencies.forEach { dependency ->
+                            val dependencyNode = dependenciesNode.appendNode("dependency")
+                            dependencyNode.appendNode("groupId", dependency.group)
+                            dependencyNode.appendNode("artifactId", dependency.name)
+                            dependencyNode.appendNode("version", dependency.version)
+                            dependencyNode.appendNode("scope", "runtime")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+>>>>>>> 3d83391 (Initial commit)
 
 dependencies {
 
@@ -38,8 +78,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+<<<<<<< HEAD
     implementation(libs.retrofit)
     implementation (libs.converter.gson.v290)
+=======
+    api(libs.retrofit)
+    api(libs.converter.gson.v290)
+>>>>>>> 3d83391 (Initial commit)
     //implementation (libs.converter.gson)
     //api(libs.converter.gson)
 

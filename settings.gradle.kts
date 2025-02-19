@@ -9,6 +9,10 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3d83391 (Initial commit)
     }
 }
 dependencyResolutionManagement {
@@ -16,6 +20,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
+=======
+        //maven { url 'https://jitpack.io' }
+>>>>>>> 3d83391 (Initial commit)
     }
 }
 

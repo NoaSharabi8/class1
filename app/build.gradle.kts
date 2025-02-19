@@ -9,7 +9,11 @@ android {
 
     defaultConfig {
         applicationId = "com.example.class1"
+<<<<<<< HEAD
         minSdk = 24
+=======
+        minSdk = 26
+>>>>>>> 3d83391 (Initial commit)
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -32,7 +36,11 @@ android {
 
 
 dependencies {
+<<<<<<< HEAD
 
+=======
+    implementation(project(":ColorsPaletteLib"))
+>>>>>>> 3d83391 (Initial commit)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -40,8 +48,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+<<<<<<< HEAD
     //implementation(libs.retrofit)
     //implementation (libs.converter.gson)
     //implementation (libs.converter.gson.v290)
+=======
+>>>>>>> 3d83391 (Initial commit)
 
 }
