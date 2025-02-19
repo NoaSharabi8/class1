@@ -1,2 +1,4 @@
 jdk:
   - openjdk17
+before_install:
+  - export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
